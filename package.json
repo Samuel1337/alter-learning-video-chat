@@ -1,5 +1,5 @@
 {
-  "name": "comms-app-react-videocall",
+  "name": "alter-learning-video-chat",
   "version": "1.8.0",
   "scripts": {
     "dev": "cross-env ENV=web && vite",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dolbyio-samples/comms-app-react-videocall"
+    "url": "https://github.com/Samuel1337/alter-learning-video-chat"
   },
   "dependencies": {
     "@dolbyio/comms-uikit-react": "0.8.0",
