@@ -20,31 +20,37 @@ Component responsible for rendering current live-streaming status.
 ### React
 
 ```javascript
-return (
-  <LiveStreamingActionBar
-    actions={{
-      start: () => startHandler(),
-      stop: async () => stopHandler(),
-    }}
-    streamingServiceLogo={<Logo />}
-    onClick={clickHandler}
-    statusLabels={{
-      active: 'streamingLabel',
-      error: 'errorLabel',
-      loading: `loadingLabel`,
-      other: 'otherLabel',
-    }}
-    buttonLabels={{ active: { label: 'buttonLabel' }}}
-    buttonLabels={{ error: { label: 'buttonLabel' }}}
-    onActionSuccess={() => {
-      if (streamingStatus === GenericStatus.Active) {
-        showSuccessNotification('liveStreamingEnded');
-      }
-      if (streamingStatus === GenericStatus.Error) {
-        showSuccessNotification('recordingSuccessfully');
-      }
-    }}
-    guestLabel={streamingLabel}
-  />
-);
+// return (
+//   <LiveStreamingActionBar
+//     actions={{
+//       start: () => startHandler(),
+//       stop: async () => stopHandler(),
+//     }}
+//     streamingServiceLogo={<Logo />}
+//     onClick={clickHandler}
+//     statusLabels={{
+//       active: 'streamingLabel',
+//       error: 'errorLabel',
+//       loading: `loadingLabel`,
+//       other: 'otherLabel',
+//     }}
+//     buttonLabels={{
+//       active: {
+//         label: 'buttonLabel',
+//       },
+//       error: {
+//         label: 'buttonLabel',
+//       }
+//     }}
+//     onActionSuccess={() => {
+//       if (streamingStatus === GenericStatus.Active) {
+//         showSuccessNotification('liveStreamingEnded');
+//       }
+//       if (streamingStatus === GenericStatus.Error) {
+//         showSuccessNotification('recordingSuccessfully');
+//       }
+//     }}
+//     guestLabel={streamingLabel}
+//   />
+// );
 ```
