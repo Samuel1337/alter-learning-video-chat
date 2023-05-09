@@ -45,7 +45,7 @@ const container = document.getElementById('root');
 const root = createRoot(container!);
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename={window.location.pathname || ''}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
