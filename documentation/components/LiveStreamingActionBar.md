@@ -34,14 +34,7 @@ return (
       loading: `loadingLabel`,
       other: 'otherLabel',
     }}
-    buttonLabels={{
-      active: {
-        label: 'buttonLabel',
-      },
-      error: {
-        label: 'buttonLabel',
-      }
-    }}
+    buttonLabels={{ active: { label: 'buttonLabel' }, error: { label: 'buttonLabel' }}}
     onActionSuccess={() => {
       if (streamingStatus === GenericStatus.Active) {
         showSuccessNotification('liveStreamingEnded');
