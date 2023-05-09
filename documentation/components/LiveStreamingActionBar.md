@@ -40,7 +40,7 @@ return (
       },
       error: {
         label: 'buttonLabel',
-      },
+      }
     }}
     onActionSuccess={() => {
       if (streamingStatus === GenericStatus.Active) {
