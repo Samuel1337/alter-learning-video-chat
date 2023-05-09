@@ -33,7 +33,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           touch .env.production
-          echo "BASE_URL=/alter-learning-video-chat/?" > .env.production
+          echo "BASE_URL=/alter-learning-video-chat/" > .env.production
           echo "VITE_MUSIC_MODE=true" >> .env.production
           yarn
           yarn build
