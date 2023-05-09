@@ -15,13 +15,13 @@ const App = () => {
     return encodeURIComponent(new URLSearchParams(window.location.search).get('token') || '');
   }, [location]);
 
-  const YOUR_TOKEN = urlToken;
+  const YOUR_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkb2xieS5pbyIsImlhdCI6MTY4MzYwMjUyMywic3ViIjoiemQzREt5amlsY3B2bUd2WU1UZXg5dz09IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9DVVNUT01FUiJdLCJ0YXJnZXQiOiJzZXNzaW9uIiwib2lkIjoiZWM3NjFkYWYtYzk0OS00MGEwLTg4NzQtYjczMTg5MDRmYjE2IiwiYWlkIjoiZjI5ZmI5YmItNDY2My00YjY4LWJjZjgtODcxODIwNDg0ZThjIiwiYmlkIjoiOGEzNjlkNDM4N2ZiM2Q1YzAxODdmYzk0MjQwNzY0MmIiLCJleHAiOjE2ODM2ODg5MjN9.M6NqrQ6b8sz3IRcr64pn2Bv0z_OkycclYHYF0TNigNrXbK56yw2BC3-Pe0OthD5mLbkJhSepFG_1Bz9_3m_icw";
 
   return (
     <TranslationProvider>
       <ConferenceCreateProvider>
         <CommsProvider
-          token={"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkb2xieS5pbyIsImlhdCI6MTY4MzYwMjUyMywic3ViIjoiemQzREt5amlsY3B2bUd2WU1UZXg5dz09IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9DVVNUT01FUiJdLCJ0YXJnZXQiOiJzZXNzaW9uIiwib2lkIjoiZWM3NjFkYWYtYzk0OS00MGEwLTg4NzQtYjczMTg5MDRmYjE2IiwiYWlkIjoiZjI5ZmI5YmItNDY2My00YjY4LWJjZjgtODcxODIwNDg0ZThjIiwiYmlkIjoiOGEzNjlkNDM4N2ZiM2Q1YzAxODdmYzk0MjQwNzY0MmIiLCJleHAiOjE2ODM2ODg5MjN9.M6NqrQ6b8sz3IRcr64pn2Bv0z_OkycclYHYF0TNigNrXbK56yw2BC3-Pe0OthD5mLbkJhSepFG_1Bz9_3m_icw"} 
+          token={YOUR_TOKEN} 
           packageUrlPrefix={`${window.location.origin}${
             import.meta.env.BASE_URL
           }assets/wasm`}
