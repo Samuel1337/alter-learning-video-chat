@@ -34,14 +34,6 @@ Component responsible for rendering current live-streaming status.
 //       loading: `loadingLabel`,
 //       other: 'otherLabel',
 //     }}
-//     buttonLabels={{
-//       active: {
-//         label: 'buttonLabel',
-//       },
-//       error: {
-//         label: 'buttonLabel',
-//       }
-//     }}
 //     onActionSuccess={() => {
 //       if (streamingStatus === GenericStatus.Active) {
 //         showSuccessNotification('liveStreamingEnded');
